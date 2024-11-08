@@ -61,9 +61,6 @@ jobs:
           TF_VAR_aws_backend_key: ${{vars.AWS_BACKEND_KEY}}
           TF_VAR_aws_backend_bucket: ${{ vars.AWS_BUCKET_BACKEND}}
           TF_VAR_aws_region: ${{vars.AWS_REGION}}
-          TF_VAR_main_uri: ${{ vars.MAIN_URI}}
-          TF_VAR_factorio_uri: ${{vars.FACTORIO_URI}}
-          TF_VAR_myip : ${{vars.MY_IP}}
         working-directory: ./terraform
 
       - name: Terraform Apply
@@ -74,7 +71,4 @@ jobs:
           TF_VAR_aws_backend_key: ${{vars.AWS_BACKEND_KEY}}
           TF_VAR_aws_backend_bucket: ${{ vars.AWS_BUCKET_BACKEND}}
           TF_VAR_aws_region: ${{vars.AWS_REGION}}
-          TF_VAR_main_uri: ${{ vars.MAIN_URI}}
-          TF_VAR_factorio_uri: ${{vars.FACTORIO_URI}}
-          TF_VAR_myip: ${{vars.MY_IP}}
         working-directory: ./terraform
